@@ -6,5 +6,5 @@ markupsafe
 Werkzeug
 gunicorn
 pandas
-tflite
+keras
 pillow
