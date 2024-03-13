@@ -7,3 +7,4 @@ Werkzeug
 gunicorn
 pandas
 tensorflow
+pillow
