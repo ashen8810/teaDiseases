@@ -35,7 +35,7 @@ tags:
 paths:
   /predict:
     summary: List all reservations
-    get:
+    post:
       summary: List all reservations
       operationId: ListAllReservations
       tags:
@@ -55,34 +55,9 @@ paths:
       responses:
         "200":
           description: Successful operation
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/reservationPayload"
+         
         "404":
           description: id not found
     
-    post:
-      tags:
-        - Reservation Management
-      summary: Create reservation providing an id and a payload
-      description: Creates reservation based on the id supplied
-      operationId: CreateReservationById
-      parameters:
-        - name: image
-          in: path
-          description: ID of reservation to create
-          required: true
-          schema:
-            type: file
-      responses:
-        "200":
-          description: Successful operation
-        "404":
-          description: Reservation ID not found
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/reservationPayload"    
+    
     
