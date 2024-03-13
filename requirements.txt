@@ -1,0 +1,9 @@
+click
+Flask
+itsdangerous
+Jinja2
+markupsafe
+Werkzeug
+gunicorn
+pandas
+tensorflow
