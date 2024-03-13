@@ -23,7 +23,7 @@ def process_image(image_data):
  'healthy tea leaf',
  'red leaf spot in tea']
     # Convert image data to numpy array
-    image = Image.open(image_data)
+    image = Image.open(io.BytesIO(image_data))
     image = image.resize((224, 224))
     image_array = np.array(image)
     # Divide by 255 to normalize pixel values
