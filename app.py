@@ -24,6 +24,9 @@ def predict():
         return jsonify(result)
     except Exception as e:
         return jsonify({"error": str(e)})
-
+@app.route('/', methods=['GET'])
+def hello():
+   
+    return jsonify({"error": "working"})
 if __name__ == '__main__':
     app.run(debug=True)
